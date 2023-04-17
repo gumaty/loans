@@ -1,0 +1,117 @@
+:root {
+
+    --main-color: rgb(1, 36, 186);
+    --accent-color: rgb(9, 216, 98);
+    --text-color: rgb(53, 53, 53);
+    --max-width: 1100px;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.header {}
+.header .header__inner {
+    width: 100%;
+    max-width: var(--max-width);
+    margin: 0.9375rem auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__inner .header__logo {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--main-color);
+    text-decoration: none;
+}
+.header__inner .header__menu {}
+
+.header__menu .menu__list {
+    display: flex;
+    gap: 40px;
+}
+
+.menu__list .menu__items {
+    list-style: none;
+}
+
+.menu__items .menu_item {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.main {
+    height: calc(100vh - 5rem);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.main .main__inner {
+    width: 100%;
+    max-width: var(--max-width);
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main__inner .intro__info {}
+
+.intro__info .info__hdl {
+    font-size: 1.5rem;
+    color:var(--accent-color);
+    font-weight: 700;
+}
+.intro__info .info__lead {
+    font-size: 4rem;
+    color:var(--main-color);
+    font-weight: 700;
+}
+.intro__info .info__boxes {
+    display: flex;
+    justify-content: flex-start;
+    gap: 2.5rem;
+}
+
+.info__boxes .info__box {}
+
+.info__box .box__text {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.main__inner .intro__form {}
+
+.intro__form .form__hdl {}
+.intro__form .contactForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.contactForm .fullname_lbl {
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+.contactForm .fullname__input {
+    border: 0 0 2px 0;
+}
+.contactForm .email_lbl {
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+.contactForm .email__input {}
+.contactForm .money_lbl {
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+.contactForm .money__input {}
+.contactForm .check__btn {
+    justify-self: flex-start;
+}

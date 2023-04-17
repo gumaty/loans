@@ -5,11 +5,64 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"/>
     <link rel="stylesheet" href="./src/css/normalize.css">
     <link rel="stylesheet" href="./src/css/style.css">
-    <title>Document</title>
+    <title>Loans</title>
 </head>
 <body>
 
+<header class="header">
+    <div class="header__inner">
+        <a href="" class="header__logo">Loans.com</a>
+        <nav class="header__menu">
+            <ul class="menu__list">
+                <li class="menu__items">
+                    <a href="" class="menu_item">Rates & Fees</a>
+                </li>
+                <li class="menu__items">
+                    <a href="" class="menu_item">How to apply</a>
+                </li>
+                <li class="menu__items">
+                    <a href="" class="menu_item">Questions?</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main class="main">
+    <section class="main__inner">
+        <div class="intro__info">
+            <h1 class="info__hdl">Personal loan</h1>
+            <h2 class="info__lead">Put your plans into actions.</h2>
+            <div class="info__boxes">
+                <div class="info__box">
+                    <p class="box__text">Online application</p>
+                </div>
+                <div class="info__box">
+                    <p class="box__text">Up to $50.000</p>
+                </div>
+                <div class="info__box">
+                    <p class="box__text">The money is yours in 48h</p>
+                </div>
+            </div>
+        </div>
+        <div class="intro__form">
+            <h3 class="form__hdl">Let's change your life</h3>
+            <form action="/" method="post" class="contactForm">
+                <label for="fullname" class="fullname_lbl">Full name</label>
+                <input type="text" id="fullname" name="fullname" class="fullname__input">
+                <label for="email" class="email_lbl">E-mail</label>
+                <input type="text" id="email" name="email" class="email__input">
+                <label for="money" class="money_lbl">How much do you need?</label>
+                <input type="text" id="money" name="money" class="money__input">
+                <input type="submit" value="Check your rates" class="check__btn">
+            </form>
+        </div>
+    </section>
+</main>
 </body>
 </html>
